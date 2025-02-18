@@ -141,6 +141,12 @@ nav{
     line-height: 5rem;
     text-align: center;
 }
+.header__container img{
+    max-width: 1050px;
+    margin-inline: auto;
+    border-radius: 10px;
+    filter: drop-shadow(5px 20px 20px rgba(0, 0, 0, 0.5));
+}
 
 @media (width > 768px){
     nav{
@@ -193,5 +199,8 @@ nav{
     .nav__btn .btn:hover{
         color: var(--white);
         background-color: var(--primary-color-dark);
+    }
+    .header__container strong{
+        color: var(--primary-color);
     }
 }    
