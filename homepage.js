@@ -32,3 +32,7 @@ ScrollReveal().reveal(".header__container img", {
     ...scrollRevealOption,
     delay: 1000,
 });
+ScrollReveal().reveal(".heading", {
+    ...scrollRevealOption,
+    delay: 1500,
+});
