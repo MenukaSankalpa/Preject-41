@@ -48,6 +48,7 @@ img{
 a {
     text-decoration: none;
     transition: 0.3s;
+
 }
 ul{
     list-style: none;
@@ -91,6 +92,7 @@ nav{
     font-size: 1.5rem;
     color: var(--white);
     cursor: pointer;
+    font-weight: 800;
 }
 .nav__links{
     position: absolute;
@@ -188,7 +190,7 @@ nav{
     width: 100vh;
     height: 50%;
     background-color: var(--primary-color);
-    transform: translateY(50%) skewY(-4deg);
+    transform: translateY(50%) skewY(-8deg);
     z-index: -1;
 }
 .scroll__down{
@@ -203,6 +205,10 @@ nav{
     border-radius: 2rem;
     border: 8px solid var(--white);
 }
+.mobile-login {
+    display: none;
+}
+
 @media (width > 768px){
     nav{
         position: static;
@@ -232,6 +238,7 @@ nav{
         flex-direction: row;
         background-color: transparent;
         transform: none;
+        
     }
     .nav__links a{
         color: var(--text-darK);
@@ -248,5 +255,38 @@ nav{
     .nav__btn .btn{
         color: var(--text-darK);
         background-color: var(--primary-color);
+        font-weight: bold;
+    }
+    .header__container::before{
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 250vh;
+        height: 50%;
+        background-color: var(--primary-color);
+        transform: translateY(50%) skewY(-4deg);
+        z-index: -1;
     }
 }    
+@media (max-width: 768px) {
+    .nav__btn {
+        display: none; 
+    }
+
+    .mobile-login {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+    }
+
+    .mobile-login .btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+    }
+    .mobile-login .btn:hover{
+        background-color: var(--white);
+    }
+}
