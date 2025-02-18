@@ -208,6 +208,50 @@ nav{
 .mobile-login {
     display: none;
 }
+.hero{
+    padding-top: 100px;
+    background-color: var(--extra-light);
+    overflow: hidden;
+}
+.heading h1{
+    color: var(--text-darK);
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+.hero__content{
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+}
+.hero__content h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #d6a04a;
+}
+.hero__content p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: var(--text-light);
+}
+.hero__img{
+    flex: 1;
+    width: 100px;
+    margin: auto;
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
 
 @media (width > 768px){
     nav{
@@ -256,6 +300,10 @@ nav{
         color: var(--text-darK);
         background-color: var(--primary-color);
         font-weight: bold;
+    }
+    .nav__btn .btn:hover{
+        color: var(--white);
+        background-color: var(--primary-color-dark);
     }
     .header__container::before{
         position: absolute;
