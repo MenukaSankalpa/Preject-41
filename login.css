@@ -15,6 +15,46 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+header {
+    position: relative;
+    background-image: url("asset/header-bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    position: fixed;
+    isolation: isolate;
+    width: 100%;
+    z-index: 9;
+}
+
+.nav__header {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+}
+
+.nav__logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--header-font);
+    color: var(--white);
+    letter-spacing: -2px;
+}
+
+.nav__menu__btn {
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 800;
 }
 
 body {
@@ -67,7 +107,7 @@ input {
 input:focus {
     background-color: transparent;
     outline: transparent;
-    border-bottom: 2px solid hsl(327, 90%, 28%);
+    border-bottom: 2px solid hsl(56, 90%, 28%);
 }
 
 input::placeholder {
@@ -86,7 +126,7 @@ label {
 input:focus~label,
 input:not(:placeholder-shown)~label {
     top: -3em;
-    color: hsl(327, 90%, 28%);
+    color: hsl(56, 90%, 28%);
     font-size: 15px;
 }
 
