@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="nav__btn">
-                <button class="home-btn">Home</button>
+                <button class="home-btn" onclick="location.href='/homepage.html'">Home</button>
             </div>
         </nav>
     </header>
@@ -49,6 +49,13 @@
                 <i class="ri-lock-fill"></i>
                 <input type="password" id="password" placeholder="password" required>
                 <label for="password">Password</label>
+            </div>
+            <div class="input-group" id="selector">
+                <i id="option" class="ri-user-fill"></i>
+                <select name="role" required>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                </select>
             </div>
             <input type="submit" class="btn" value="Sign Up" name="signup">
         </form>
