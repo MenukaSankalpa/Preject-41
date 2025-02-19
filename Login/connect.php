@@ -1,6 +1,6 @@
 <?php
 
-$host="loaclhost";
+$host="localhost";
 $user="root";
 $pass="";
 $db="scdb";
