@@ -29,7 +29,7 @@
 
     <div class="container" id="signup" style="display: none;">
         <h1 class="form-title">REGISTER</h1>
-        <form method="post">
+        <form method="post" action="register.php">
             <div class="input-group">
                 <i class="ri-user-3-fill"></i>
                 <input type="text" name="fName" id="fName" placeholder="First Name" required>
@@ -58,9 +58,9 @@
         </div>
     </div>
 
-    <div class="container" id="signIn">
+    <div class="container" id="signIn" >
         <h1 class="form-title">Sign In</h1>
-        <form method="post">
+        <form method="post" action="register.php">
             <div class="input-group">
                 <i class="ri-mail-fill"></i>
                 <input type="email" name="email" id="email" placeholder="Email" required>
