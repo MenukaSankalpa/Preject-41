@@ -48,6 +48,7 @@ nav {
     font-family: var(--header-font);
     color: var(--white);
     letter-spacing: -2px;
+    text-decoration: none;
 }
 
 .nav__menu__btn {
@@ -210,4 +211,59 @@ button {
 button:hover {
     text-decoration: underline;
     color: blue;
+}
+
+@media (width > 768px) {
+    nav {
+        position: static;
+        padding: 2rem 1rem 0;
+        max-width: var(--max-width);
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .nav__header {
+        flex: 1;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .nav__logo a {
+        color: var(--text-darK);
+    }
+
+    .nav__menu__btn {
+        display: none;
+    }
+
+    .nav__btn {
+        width: 50px;
+    }
+
+    .home-btn {
+        background-color: black;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px 30px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .home-btn:hover {
+        background-color: rgb(125, 125, 235);
+        transform: scale(1.05);
+        color: #e2e2e2;
+    }
+
+    .home-btn:active {
+        transform: scale(0.95);
+    }
 }
