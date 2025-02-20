@@ -21,7 +21,7 @@ if(isset($_POST['signUp'])){
             header("location:login.php");
         }
         else{
-            echo "Error:".$conn->error;
+            echo "Error: " . $conn->error;
         }
     }
 
