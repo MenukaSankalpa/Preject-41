@@ -333,6 +333,7 @@ img {
     margin-inline: auto;
     margin-top: 4rem;
     text-align: center;
+    margin-bottom: 4.5rem;
 }
 
 .range__grid {
@@ -389,6 +390,7 @@ img {
     color: var(--primary-color);
     border-color: var(--primary-color);
 }
+
 
 @media (width > 768px) {
     nav {
@@ -462,6 +464,16 @@ img {
         background-color: var(--primary-color);
         transform: translateY(50%) skewY(-4deg);
         z-index: -1;
+    }
+
+    .range__card img {
+        transition: 0.3s;
+        width: 550px;
+        height: 300px;
+    }
+
+    .range__grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -553,3 +565,17 @@ img {
         transform: translateY(0px);
     }
 }*/
+
+/*@media (width > 1024px) {
+    .range__grid {
+        gap: 1.5rem;
+    }
+
+    .range__details {
+        padding: 4rem;
+    }
+
+    .story__grid {
+        padding: 1.5rem;
+    }
+}
