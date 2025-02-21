@@ -415,9 +415,9 @@ img {
 }
 
 .social a {
-    font-size: 10px;
+    font-size: 20px;
     color: var(--extra-light);
-    padding: 10px;
+    padding: 2px 2px 2px 2px;
     background: var(--text-darK);
     border-radius: 0.2rem;
 }
@@ -425,6 +425,41 @@ img {
 .social a:hover {
     background: var(--primary-color);
     color: var(--text-darK);
+}
+
+.footer-box h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-box li a {
+    color: var(--text-light);
+}
+
+.footer-box li a:hover {
+    color: var(--primary-color-dark);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.contact span {
+    display: flex;
+    align-items: center;
+}
+
+.contact i {
+    font-size: 20px;
+    margin-right: 1rem;
+}
+
+.copyright {
+    padding: 20px;
+    text-align: center;
+    background: var(--secondry-color);
 }
 
 @media (width > 768px) {
