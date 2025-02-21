@@ -358,6 +358,38 @@ img {
     transform: scale(1.1);
 }
 
+.range__details {
+    position: absolute;
+    inset: 0;
+    padding: 2rem;
+    background-image: linear-gradient(to bottom right,
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0.1) 50%,
+            rgba(0, 0, 0, 0.75));
+}
+
+.range__details {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--header-font);
+    color: var(--white);
+}
+
+.range__details a {
+    display: inline-block;
+    padding: 0px 6px;
+    font-size: 1rem;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 100%;
+}
+
+.range__details a:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
 @media (width > 768px) {
     nav {
         position: static;
