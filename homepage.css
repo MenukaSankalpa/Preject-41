@@ -391,6 +391,11 @@ img {
     border-color: var(--primary-color);
 }
 
+section .section__container {
+    background-color: blue;
+
+}
+
 .footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
@@ -460,6 +465,10 @@ img {
     padding: 20px;
     text-align: center;
     background: var(--secondry-color);
+}
+
+.copyright I {
+    size: 10px;
 }
 
 @media (width > 768px) {
