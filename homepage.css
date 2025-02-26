@@ -431,6 +431,12 @@ section .section__container {
     background: var(--primary-color);
     color: var(--text-darK);
 }
+.footer{
+    padding-top: 30px;
+    background-color: var(--extra-light);
+    overflow: hidden;
+}
+
 
 .footer-box h3 {
     font-weight: 600;
@@ -464,7 +470,7 @@ section .section__container {
 .copyright {
     padding: 20px;
     text-align: center;
-    background: var(--secondry-color);
+    background: var(--primary-color-dark);
 }
 
 .copyright I {
