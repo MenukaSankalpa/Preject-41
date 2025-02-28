@@ -35,3 +35,7 @@ ScrollReveal().reveal(".heading", {
     ...scrollRevealOption,
     delay: 1500,
 });
+ScrollReveal().reveal(".section__header", {
+    ...scrollRevealOption,
+    delay: 1500,
+});
